@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anime Playback Controls</title>
+  <script src="anime.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #circle {
+      width: 100px;
+      height: 100px;
+      background-color: deepskyblue;
+      border: 5px solid;
+      border-radius: 50%;
+    }
+    .page{
+      width: 200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .playback-control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 90px;
+    }
+    button {
+      border: 1px solid;
+      background: transparent;
+      font-size: 15px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      min-width: 113px;
+      padding: 5px 18px;
+    }
+    button:active {
+      transform: scale(0.5);
+    }
+    button:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+	<div class="page">
+    <div class="playback-control">
+      <button id="js-play">Play</button>
+      <button id="js-replay">Restart</button>
+      <button id="js-reverse">Reverse</button>
+      <button id="js-pause">Pause</button>
+    </div>
+   <div id="circle"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

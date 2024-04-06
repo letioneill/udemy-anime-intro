@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spinner</title>
+  <script src="anime.js"></script>
+  <style>
+    body, html {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .page {
+      border: 1px solid #f5f5f5;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .spinner {
+      width: 100px;
+      height: 100px;
+      border: 5px solid rgba(0, 0, 0, 0.2);
+      border-top-color: #000;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="spinner" id="js-spinner"></div>
+  </div>
+<script>
+  anime({
+    targets: '#js-spinner',
+    rotate: '+=360deg',
+    easing: 'linear',
+    duration: 500,
+    loop: true,
+  });
+</script>
+</body>
+</html>

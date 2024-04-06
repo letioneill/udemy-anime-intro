@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="anime.js"></script>
+  <title>Anime.js: Object Values</title>
+  <style>
+    html {
+      font-size: 10px;
+    }
+    .page {
+      width: 80%;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 50px auto 0;
+      position: relative;
+      border: 1px solid;
+    }
+    .play {
+      text-align: center;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      position: relative;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="box js-box"></div>
+    <div class="box js-box"></div>
+    <div class="play">
+      <button id="play">Play</button>
+    </div>
+  </div>
+  <script src="animation.js"></script>
+  <script>
+    document.getElementById('play')
+      .addEventListener('click', myAnim.play);
+  </script>
+</body>
+</html>

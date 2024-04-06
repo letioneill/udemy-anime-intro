@@ -1,0 +1,58 @@
+.row {
+  display: flex;
+  margin-bottom: 200px;
+}
+.page {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 19px;
+  padding-top: 10px;
+  height: 100%;
+  perspective: 600px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin-right: 60px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 14px;
+  /*will-change: transform, opacity;*/
+}
+.box p {
+
+}
+
+.box:last-of-type {
+  margin-right: 0;
+}
+
+body#js-body {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.origin-top-left {
+  transform-origin: top left;
+}
+.origin-top-right {
+  transform-origin: top right;
+}
+.origin-bottom-left {
+  transform-origin: bottom left;
+}
+.origin-bottom-right {
+  transform-origin: bottom right;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=A, initial-scale=1.0">
+  <title>Animation with RAF</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <script>
+    // add animation
+    const anim = window.anime({
+      targets: '#box',
+      duration: 2000,
+      opacity: 0,
+      easing: 'linear',
+    });
+  </script>
+</body>
+</html>

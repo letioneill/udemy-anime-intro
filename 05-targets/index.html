@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=A, initial-scale=1.0">
+  <title>Anime: Targets</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <style>
+    html {
+      font-size: 10px;
+    }
+
+    .page {
+      width: 500px;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 107px auto;
+      position: relative;
+      border: 1px solid;
+      min-height: 260px;
+      box-sizing: border-box;
+      padding: 25px;
+    }
+
+    .play {
+      text-align: center;
+    }
+
+    #circle {
+      width: 50px;
+      height: 50px;
+      background-color: orange;
+      border-radius: 50%;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      position: relative;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page" id="page">
+    <div id="circle"></div>
+    <div class="boxes">
+      <div class="box js-box"></div>
+      <div class="box js-box"></div>
+    </div>
+    <div class="play">
+      <button id="play">Play</button>
+    </div>
+  </div>
+  <script src="animation.js"></script>
+  <script>
+    document.getElementById('play').addEventListener('click', myAnim.play);
+  </script>
+</body>
+</html>
